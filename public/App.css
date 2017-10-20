@@ -1,0 +1,360 @@
+#register-bot{
+    max-width:800px;
+    width:100%;
+    margin:0 auto;
+}
+
+#register-bot .content{
+    padding:30px 0;
+    position: relative;
+    display: inline-block;
+}
+#register-bot .content p{
+    color:#696969;
+}
+
+
+.error-message{
+    padding:10px;
+    position: relative;
+    display: inline-block;
+    color:#fff;
+    width:100%;
+    text-align: center;
+    margin: 10px 0;
+
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#a90329+0,8f0222+44,6d0019+100;Brown+Red+3D */
+    background: rgb(169,3,41); /* Old browsers */
+    background: -moz-linear-gradient(left, rgba(169,3,41,1) 0%, rgba(143,2,34,1) 44%, rgba(109,0,25,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, rgba(169,3,41,1) 0%,rgba(143,2,34,1) 44%,rgba(109,0,25,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, rgba(169,3,41,1) 0%,rgba(143,2,34,1) 44%,rgba(109,0,25,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a90329', endColorstr='#6d0019',GradientType=1 ); /* IE6-9 */
+}
+
+
+.success-message{
+    padding:10px;
+    position: relative;
+    display: inline-block;
+    color:#fff;
+    width:100%;
+    text-align: center;
+    margin: 10px 0;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#759972+0,008a00+100&0.84+0,1+100 */
+    background: -moz-linear-gradient(left, rgba(117,153,114,0.84) 0%, rgba(0,138,0,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, rgba(117,153,114,0.84) 0%,rgba(0,138,0,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, rgba(117,153,114,0.84) 0%,rgba(0,138,0,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d6759972', endColorstr='#008a00',GradientType=1 ); /* IE6-9 */
+
+}
+
+.input {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+}
+
+.input__field {
+    position: relative;
+    display: block;
+    float: right;
+    padding: 0.8em;
+    border: none;
+    border-radius: 0;
+    background: #f0f0f0;
+    color: #aaa;
+    font-weight: 400;
+}
+
+textarea{
+    height:150px;
+}
+.textarea_label{
+    height:88%;
+
+}
+.textarea_label .input__label-content{
+    position: absolute;
+    bottom:8px;
+}
+.input__field:focus {
+    outline: none;
+}
+
+.input__label {
+    display: inline-block;
+    float: right;
+    padding: 0 1em;
+    width: 40%;
+    color: #696969;
+    font-weight: bold;
+    font-size: 70.25%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.input__label-content {
+    position: relative;
+    display: block;
+    padding: 1.6em 0;
+    width: 100%;
+}
+
+.graphic {
+    position: absolute;
+    top: 0;
+    left: 0;
+    fill: none;
+}
+
+.icon {
+    color: #ddd;
+    font-size: 150%;
+}
+
+/* Individual styles */
+
+/* Manami */
+.input--manami {
+    overflow: hidden;
+}
+
+.input__field--manami {
+    width: 100%;
+    background: transparent;
+    padding: 0.5em;
+    margin-bottom: 2em;
+    color: #f9f7f6;
+    z-index: 100;
+    opacity: 0;
+}
+
+.input__label--manami {
+    width: 100%;
+    position: absolute;
+    text-align: left;
+    padding: 0.5em 0;
+    pointer-events: none;
+    font-size: 1em;
+}
+
+.input__label--manami::before,
+.input__label--manami::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    left: 0;
+}
+
+.input__label--manami::before {
+    height: 100%;
+    background: #A8A8A8;
+    top: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+    -webkit-transition: -webkit-transform 0.2s;
+    transition: transform 0.2s;
+}
+
+.input__label--manami::after {
+    height: 2px;
+    background: #A8A8A8;
+    top: 100%;
+    -webkit-transition: opacity 0.2s;
+    transition: opacity 0.2s;
+}
+
+.input__label-content--manami {
+    padding: 0;
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+    -webkit-transition: -webkit-transform 0.2s, color 0.2s;
+    transition: transform 0.2s, color 0.2s;
+}
+
+.input__field--manami:focus,
+.input--filled .input__field--manami {
+    opacity: 1;
+    -webkit-transition: opacity 0s 0.2s;
+    transition: opacity 0s 0.2s;
+}
+
+.input__label--manami::before,
+.input__label--manami::after,
+.input__label-content--manami,
+.input__field--manami:focus,
+.input--filled .input__field--manami {
+    -webkit-transition-timing-function: cubic-bezier(0, 0.25, 0.5, 1);
+    transition-timing-function: cubic-bezier(0, 0.25, 0.5, 1);
+}
+
+.input__field--manami:focus + .input__label--manami::before,
+.input--filled .input__label--manami::before {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.input__field--manami:focus + .input__label--manami::after,
+.input--filled .input__label--manami::after {
+    opacity: 0;
+}
+
+.input__field--manami:focus + .input__label--manami .input__label-content--manami,
+.input--filled .input__label--manami .input__label-content--manami {
+    color: #cbc4c6;
+    -webkit-transform: translate3d(0, 2.1em, 0) scale3d(0.65, 0.65, 1);
+    transform: translate3d(0, 2.1em, 0) scale3d(0.65, 0.65, 1);
+}
+
+
+/* General styles for all types of buttons */
+.progress-button {
+    position: relative;
+    display: inline-block;
+    padding: 0 60px;
+    margin-right:-15px;
+    outline: none;
+    float: right;
+    border: none;
+    background: #b74646;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 3;
+}
+
+.progress-button[disabled],
+.progress-button[disabled].state-loading {
+    cursor: default;
+}
+
+.progress-button .content {
+    position: relative;
+    display: block;
+}
+
+.progress-button .content::before,
+.progress-button .content::after  {
+    position: absolute;
+    color: #b74646;
+    opacity: 0;
+    -webkit-transition: opacity 0.3s 0.3s;
+    transition: opacity 0.3s 0.3s;
+}
+
+.progress-button .content::before {
+    content: "\e600"; /* Checkmark for success */
+}
+
+.progress-button .content::after {
+    content: "\e601"; /* Cross for error */
+}
+
+.progress-button.state-success .content::before,
+.progress-button.state-error .content::after {
+    opacity: 1;
+}
+
+.notransition {
+    -webkit-transition: none !important;
+    transition: none !important;
+}
+
+.progress-button .progress {
+    background: #b74646;
+}
+
+.progress-button .progress-inner {
+    position: absolute;
+    left: 0;
+    background: #b74646;
+}
+
+.progress-button[data-horizontal] .progress-inner {
+    top: 0;
+    width: 0;
+    height: 100%;
+    -webkit-transition: width 0.3s, opacity 0.3s;
+    transition: width 0.3s, opacity 0.3s;
+}
+
+.progress-button[data-vertical] .progress-inner {
+    bottom: 0;
+    width: 100%;
+    height: 0;
+    -webkit-transition: height 0.3s, opacity 0.3s;
+    transition: height 0.3s, opacity 0.3s;
+}
+
+/* Necessary 3d styles for buttons with perspective */
+
+.progress-button[data-perspective] {
+    position: relative;
+    display: inline-block;
+    padding: 0;
+    background: transparent;
+    -webkit-perspective: 900px;
+    perspective: 900px;
+}
+
+.progress-button[data-perspective] .content {
+    padding: 0 60px;
+    background: #b74646;
+}
+
+.progress-button[data-perspective] .progress-wrap {
+    display: block;
+    -webkit-transition: -webkit-transform 0.2s;
+    transition: transform 0.2s;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+.progress-button[data-perspective] .content,
+.progress-button[data-perspective] .progress {
+    outline: 1px solid rgba(0,0,0,0); /* Smoothen jagged edges in FF */
+}
+
+
+.progress-button[data-style="shrink"] { /* common for horizontal and vertical */
+    overflow: hidden;
+    -webkit-transition: -webkit-transform 0.2s;
+    transition: transform 0.2s;
+}
+
+.progress-button[data-style="shrink"][data-horizontal] .content {
+    -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+.progress-button[data-style="shrink"][data-horizontal] .content::before,
+.progress-button[data-style="shrink"][data-horizontal] .content::after {
+    top: 100%;
+    right: auto;
+    left: 50%;
+    -webkit-transition: opacity 0.3s;
+    transition: opacity 0.3s;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.progress-button[data-style="shrink"][data-horizontal].state-loading {
+    -webkit-transform: scaleY(0.3);
+    transform: scaleY(0.3);
+}
+
+.progress-button[data-style="shrink"][data-horizontal].state-loading .content {
+    opacity: 0;
+}
+
+.progress-button[data-style="shrink"][data-horizontal].state-success .content,
+.progress-button[data-style="shrink"][data-horizontal].state-error .content {
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+}
