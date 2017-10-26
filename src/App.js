@@ -284,7 +284,7 @@ class Allbranches extends Component {
                                 <div className="item" key={item.id}>
                                     <div className="row">
                                         <div className="col-md-4">
-                                            <h3>{item.title}</h3>
+                                            <h3 dangerouslySetInnerHTML={{__html: item.title}} ></h3>
                                         </div>
                                         <div className="col-md-4">{item.address}</div>
                                         <div className="col-md-4 text-right">
